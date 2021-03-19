@@ -1,0 +1,36 @@
+.address {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-white);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.address__item {
+  margin-top: 8px;
+
+  @media (min-width: $desktop) {
+    margin-top: 9px;
+  }
+}
+
+.address__link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--ftr-text-grey-op60);
+  transition: 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-blue);
+  }
+}

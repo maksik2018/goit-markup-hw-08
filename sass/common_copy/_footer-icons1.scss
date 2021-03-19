@@ -1,0 +1,39 @@
+.footer-icons {
+  margin-left: 70px;
+}
+
+.footer-icons__pretitle {
+  color: var(--primary-white);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-icons__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-icons__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.footer-icons__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white);
+  transition: background 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background: var(--primary-blue);
+  }
+}

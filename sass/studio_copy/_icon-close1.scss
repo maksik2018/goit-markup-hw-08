@@ -1,0 +1,21 @@
+.icon__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-white);
+  fill: currentColor;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-blue);
+  }
+}

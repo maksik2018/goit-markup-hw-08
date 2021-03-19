@@ -1,0 +1,12 @@
+@media (min-width: $tablet) {
+  .nav,
+  .site-menu,
+  .nav-contacts {
+    display: flex;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+}

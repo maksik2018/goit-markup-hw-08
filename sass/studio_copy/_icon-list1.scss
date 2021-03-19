@@ -1,0 +1,26 @@
+.icon__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.icon__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-white);
+  border-radius: 50%;
+  fill: var(--social-icons);
+  transition: background-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background: var(--primary-blue);
+    fill: var(--primary-white);
+  }
+}
