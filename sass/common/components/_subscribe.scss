@@ -1,6 +1,15 @@
-// .subscribe {
-//   margin-left: 105px;
-// }
+@media (min-width: $tablet) {
+  .subscribe {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .subscribe {
+    margin-left: 93px;
+    margin-top: 0px;
+  }
+}
 
 .subscribe__pretitle {
   color: var(--primary-white);
@@ -15,6 +24,25 @@
   align-items: center;
 }
 
+@media (min-width: $desktop) {
+  .subscribe__wrap {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.subscribe__email {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 358px;
+  }
+}
+
 .subscribe__input {
   padding: 15px 16px;
   // margin-right: 12px;
@@ -24,8 +52,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   height: 50px;
-  width: 450px;
+  width: 100%;
   outline: none;
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
 
   &::placeholder {
     font-style: normal;
@@ -41,11 +73,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  // width: 200px;
   height: 50px;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 29px;
+  padding-left: 29px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -58,6 +92,11 @@
   border: 1px solid var(--primary-blue);
   outline: none;
   transition: box-shadow 250ms var(--timing-function);
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 
   &:hover,
   &:focus {

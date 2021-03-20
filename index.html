@@ -58,6 +58,11 @@
             >
           </li>
         </ul>
+        <button class="icon-menu js-open-menu">
+          <svg class="close" width="40" height="40">
+            <use href="./image/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -103,7 +108,7 @@
                   <use href="./image/symbol-defs.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="pretitle">Пунктуальность</h3>
+              <h3 class="pretitle advantages__pretitle">Пунктуальность</h3>
               <p class="advantages__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
@@ -115,7 +120,7 @@
                   <use href="./image/symbol-defs.svg#monitor"></use>
                 </svg>
               </div>
-              <h3 class="pretitle">Планирование</h3>
+              <h3 class="pretitle advantages__pretitle">Планирование</h3>
               <p class="advantages__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
@@ -127,7 +132,9 @@
                   <use href="./image/symbol-defs.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="pretitle">Современные технологии</h3>
+              <h3 class="pretitle advantages__pretitle">
+                Современные технологии
+              </h3>
               <p class="advantages__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -142,19 +149,34 @@
           <ul class="task__list">
             <li class="task__item">
               <div class="task__thumb">
-                <img src="./image/computer.png" alt="компьютер" width="370" />
+                <img
+                  srcset="./image/desktop11.jpg 1x, ./image/desktop12.jpg 2x"
+                  src="./image/computer.png"
+                  alt="компьютер"
+                  width="370"
+                />
                 <h3 class="task__name">Десктопные приложения</h3>
               </div>
             </li>
             <li class="task__item">
               <div class="task__thumb">
-                <img src="./image/laptop.png" alt="ноутбук" width="370" />
+                <img
+                  srcset="./image/laptop1.jpg, ./image/laptop2.jpg 2x"
+                  src="./image/laptop.png"
+                  alt="ноутбук"
+                  width="370"
+                />
                 <h3 class="task__name">Мобильные приложения</h3>
               </div>
             </li>
             <li class="task__item">
               <div class="task__thumb">
-                <img src="./image/tablet.png" alt="планшет" width="370" />
+                <img
+                  srcset="./image/tablet11.jpg 1x, ./image/tablet12.jpg 2x"
+                  src="./image/tablet.png"
+                  alt="планшет"
+                  width="370"
+                />
                 <h3 class="task__name">Дизайнерские решения</h3>
               </div>
             </li>
@@ -163,10 +185,17 @@
       </section>
       <section class="team">
         <div class="container team__container">
-          <h2 class="title">Наша команда</h2>
+          <h2 class="title team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./image/ihor.jpg" alt="Игорь Демьяненко" width="270" />
+              <div class="team__list-thumb">
+                <img
+                  class="team__list-img"
+                  srcset="./image/teammate1.jpg 1x, ./image/teammate2.jpg 2x"
+                  src="./image/ihor.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </div>
               <div class="team__thumb">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -203,7 +232,14 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./image/olha.jpg" alt="Ольга Репина" width="270" />
+              <div class="team__list-thumb">
+                <img
+                  class="team__list-img"
+                  srcset="./image/teammate21.jpg 1x, ./image/teammate22.jpg 2x"
+                  src="./image/olha.jpg"
+                  alt="Ольга Репина"
+                />
+              </div>
               <div class="team__thumb">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -240,11 +276,14 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./image/nikolai.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <div class="team__list-thumb">
+                <img
+                  class="team__list-img"
+                  srcset="./image/teammate31.jpg 1x, ./image/teammate32.jpg 2x"
+                  src="./image/nikolai.jpg"
+                  alt="Николай Тарасов"
+                />
+              </div>
               <div class="team__thumb">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -281,7 +320,14 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./image/misha.jpg" alt="Михаил Ермаков" width="270" />
+              <div class="team__list-thumb">
+                <img
+                  class="team__list-img"
+                  srcset="./image/teammate41.jpg 1x, ./image/teammate42.jpg 2x"
+                  src="./image/misha.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </div>
               <div class="team__thumb">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>
@@ -322,7 +368,7 @@
       </section>
       <section class="client">
         <div class="container client__container">
-          <h2 class="title">Постоянные клиенты</h2>
+          <h2 class="title client__title">Постоянные клиенты</h2>
           <ul class="client__list">
             <li class="client__item">
               <a href="#" class="client__link"
@@ -536,6 +582,19 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg href="./image/symbol-defs.svg#icone-menu"></svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="" class="link">О нас</a></li>
+        <li><a href="" class="link">Работы</a></li>
+        <li><a href="" class="link">Контакты</a></li>
+        <li><a href="" class="link">Карьера</a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

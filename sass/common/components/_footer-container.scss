@@ -5,4 +5,19 @@
   // justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media (min-width: $tablet) {
+    flex-flow: wrap;
+    justify-content: space-around;
+    // align-items: center;
+    // padding-right: 76px;
+    // padding-left: 89px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    align-items: baseline;
+  }
 }

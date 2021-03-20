@@ -1,6 +1,20 @@
-.footer-icons {
-  margin-top: 60px;
-  margin-bottom: 60px;
+@media (max-width: 767px) {
+  .footer-icons {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .footer-icons {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer-icons {
+    margin-left: 70px;
+  }
 }
 
 .footer-icons__pretitle {
