@@ -21,7 +21,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/image/mobile1.jpg);
+    url(./image/mobile1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/image/mobile2.jpg);
+      url(./image/mobile2.jpg);
   }
 }
 
@@ -70,7 +70,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/image/desktop1.jpg);
+      url();
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -81,7 +81,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/image/desktop2.jpg);
+        url(./image/desktop2.jpg);
     }
   }
 }
