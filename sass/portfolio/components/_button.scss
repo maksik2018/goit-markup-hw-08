@@ -1,11 +1,26 @@
 .button {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-flow: wrap;
+  margin-bottom: 25px;
+  // justify-content: space-around;
+
+  @media (min-width: $tablet) {
+    flex-flow: nowrap;
+    // padding-left: 64px;
+    justify-content: center;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .button__item {
   margin-right: 8px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 
   &:last-child {
     margin-right: 0;

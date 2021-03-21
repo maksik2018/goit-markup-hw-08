@@ -19,8 +19,8 @@
       <div class="container site-header__container">
         <nav class="nav">
           <a href="./index.html" class="logo site-header--logo"
-            ><span class="logo--left">Web</span
-            ><span class="logo--right">Studio</span></a
+            ><span class="logo__text-left">Web</span
+            ><span class="logo__text-right">Studio</span></a
           >
 
           <ul class="site-menu">
@@ -57,6 +57,11 @@
             >
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu">
+          <svg class="close" width="40" height="40">
+            <use href="./image/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -86,9 +91,13 @@
               <a href="#" class="examples__link">
                 <div class="examples__thumb">
                   <img
-                    src="./image/technokriak.jpg"
+                    class="examples__img"
+                    srcset="
+                      ./image/portfolio/technokriak1.jpg 1x,
+                      ./image/portfolio/technokriak2.jpg 2x
+                    "
+                    src="./image/portfolio/technokriak.jpg"
                     alt="технокряк"
-                    width="370"
                   />
                   <!-- <div class="examples-overlay"> -->
                   <p class="overlay__text">
@@ -108,9 +117,13 @@
               <a href="#" class="examples__link">
                 <div class="examples__thumb">
                   <img
-                    src="./image/NewOrlean.jpg"
+                    class="examples__img"
+                    srcset="
+                      ./image/portfolio/neworlean1.jpg 1x,
+                      ./image/portfolio/neworlean2.jpg 2x
+                    "
+                    src="./image/portfolio/NewOrlean.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
                   />
                   <!-- <div class="examples-overlay"> -->
                   <p class="overlay__text">
@@ -133,9 +146,13 @@
               <a href="#" class="examples__link">
                 <div class="examples__thumb">
                   <img
-                    src="./image/Seafood.jpg"
+                    class="examples__img"
+                    srcset="
+                      ./image/portfolio/Seafood1.jpg 1x,
+                      ./image/portfolio/Seafood2.jpg 2x
+                    "
+                    src="./image/portfolio/Seafood.jpg"
                     alt="Ресторан Seafood"
-                    width="370"
                   />
                   <!-- <div class="examples-overlay"> -->
                   <p class="overlay__text">
@@ -155,9 +172,16 @@
             <li class="examples__item">
               <a href="#" class="examples__link">
                 <div class="examples__thumb">
-                  <!-- <div class="examples-thumb"> -->
-                  <img src="./image/Prime.jpg" alt="Проект Prime" width="370" />
-                  <!-- <div class="examples-overlay"> -->
+                  <img
+                    class="examples__img"
+                    srcset="
+                      ./image/portfolio/Prime1.jpg 1x,
+                      ./image/portfolio/Prime2.jpg 2x
+                    "
+                    src="./image/portfolio/Prime.jpg"
+                    alt="Проект Prime"
+                  />
+
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -174,7 +198,15 @@
             <li class="examples__item">
               <a href="#" class="examples__link">
                 <div class="examples__thumb">
-                  <img src="./image/Boxes.jpg" alt="Проект Boxes" width="370" />
+                  <img
+                    class="examples__img"
+                    srcset="
+                      ./image/portfolio/Boxes1.jpg 1x,
+                      ./image/portfolio/Boxes2.jpg 2x
+                    "
+                    src="./image/portfolio/Boxes.jpg"
+                    alt="Проект Boxes"
+                  />
                   <!-- <div class="examples-overlay"> -->
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения
@@ -193,9 +225,13 @@
               <a href="#" class="examples__link">
                 <div class="examples__thumb">
                   <img
-                    src="./image/Inspiration.jpg"
+                    class="examples__img"
+                    srcset="
+                      ./image/portfolio/Inspiration1.jpg 1x,
+                      ./image/portfolio/Inspiration2.jpg 2x
+                    "
+                    src="./image/portfolio/Inspiration.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
                   />
                   <!-- <div class="examples-overlay"> -->
                   <p class="overlay__text">
@@ -215,9 +251,13 @@
               <a href="#" class="examples__link">
                 <div class="examples__thumb">
                   <img
-                    src="./image/Edition.jpg"
+                    class="examples__img"
+                    srcset="
+                      ./image/portfolio/Edition1.jpg 1x,
+                      ./image/portfolio/Edition2.jpg 2x
+                    "
+                    src="./image/portfolio/Edition.jpg"
                     alt="Издание Limited Edition"
-                    width="370"
                   />
                   <!-- <div class="examples-overlay"> -->
                   <p class="overlay__text">
@@ -236,7 +276,15 @@
             <li class="examples__item">
               <a href="#" class="examples__link">
                 <div class="examples__thumb">
-                  <img src="./image/LAB.jpg" alt="Проект LAB" width="370" />
+                  <img
+                    class="examples__img"
+                    srcset="
+                      ./image/portfolio/LAB1.jpg 1x,
+                      ./image/portfolio/LAB2.jpg 2x
+                    "
+                    src="./image/portfolio/LAB.jpg"
+                    alt="Проект LAB"
+                  />
                   <!-- <div class="examples-overlay"> -->
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения
@@ -255,7 +303,12 @@
               <a href="#" class="examples__link">
                 <div class="examples__thumb">
                   <img
-                    src="./image/GrowingBusiness.jpg"
+                    class="examples__img"
+                    srcset="
+                      ./image/portfolio/GrowingBusiness1.jpg 1x,
+                      ./image/portfolio/GrowingBusiness2.jpg 2x
+                    "
+                    src="./image/portfolio/GrowingBusiness.jpg"
                     alt="Growing Business"
                     width="370"
                   />
@@ -281,8 +334,8 @@
       <div class="container footer__container">
         <div class="footer-address">
           <a href="./index.html" class="logo"
-            ><span class="logo--left">Web</span
-            ><span class="logo--footer">Studio</span></a
+            ><span class="logo__text-left">Web</span
+            ><span class="logo__text-footer">Studio</span></a
           >
 
           <address>
@@ -361,5 +414,55 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close" width="40" height="40">
+          <use href="./image/symbol-defs.svg#close-menu"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link mobile-menu__link--current"
+            href="./portfolio.html"
+            >Портфолио</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="tel:+380961111111:" class="mobile-contacts__tel"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts__mail"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link mobile-links">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link mobile-links">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link mobile-links">Facebook</a>
+        </li>
+
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
