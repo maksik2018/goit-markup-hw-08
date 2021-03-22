@@ -600,6 +600,12 @@ img {
   text-align: center;
 }
 
+@media (min-width: 1200px) {
+  .footer-address {
+    text-align: left;
+  }
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,6 +708,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media (min-width: 1200px) {
+  .footer-icons__pretitle {
+    text-align: left;
+  }
+}
+
 .footer-icons__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,6 +772,12 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .subscribe__pretitle {
+    text-align: left;
+  }
 }
 
 .subscribe__wrap {

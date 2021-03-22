@@ -4,6 +4,10 @@
 
 .footer-address {
   text-align: center;
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 // .footer--logo {

@@ -16,6 +16,10 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .subscribe__wrap {
