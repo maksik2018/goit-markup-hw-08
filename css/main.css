@@ -930,7 +930,6 @@ img {
 .hero__container {
   padding-top: 118px;
   padding-bottom: 118px;
-  min-height: 400px;
   text-align: center;
 }
 
@@ -938,15 +937,12 @@ img {
   .hero__container {
     padding-top: 200px;
     padding-bottom: 200px;
-    min-height: 600px;
   }
 }
 
 .hero__overlay {
   max-width: 1600px;
-  max-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/mobile1.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/mobile1.jpg);
   background-size: cover;
@@ -1101,7 +1097,6 @@ img {
 .advantages__thumb {
   margin-top: 30px;
   border-radius: 4px;
-  width: 450px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1113,18 +1108,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background: var(--bg-sect-white);
-}
-
-@media (min-width: 768px) {
-  .advantages__thumb {
-    width: 354px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .advantages__thumb {
-    width: 270px;
-  }
 }
 
 .advantages__icon {
@@ -1411,6 +1394,28 @@ img {
   margin-left: -30px;
 }
 
+.client__item {
+  height: 90px;
+  -ms-flex-preferred-size: calc(100% / 2 - 30px);
+      flex-basis: calc(100% / 2 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .client__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .client__item {
+    -ms-flex-preferred-size: calc(100% / 6 - 30px);
+        flex-basis: calc(100% / 6 - 30px);
+  }
+}
+
 .client__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1421,10 +1426,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
-  height: 90px;
-  margin-top: 30px;
-  margin-left: 30px;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--social-icons);
   border-radius: 4px;
   fill: var(--social-icons);
@@ -1435,18 +1438,6 @@ img {
 .client__link:hover, .client__link:focus {
   border: 1px solid var(--primary-blue);
   fill: var(--primary-blue);
-}
-
-@media (min-width: 768px) {
-  .client__link {
-    width: 226px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .client__link {
-    width: 170px;
-  }
 }
 
 .backdrop {
@@ -1482,15 +1473,15 @@ img {
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
   padding: 40px;
-  width: 450px;
-  height: 609px;
+  width: 100%;
+  max-height: 609px;
   background-color: var(--primary-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1680,7 +1671,6 @@ img {
 .checkbox__icon {
   border: 2px solid var(--hdr-text-black);
   background: var(--primary-white);
-  margin-left: 12px;
   margin-right: 8px;
   border-radius: 2px;
   display: inline-block;
@@ -1690,14 +1680,27 @@ img {
   cursor: pointer;
 }
 
+@media (min-width: 1200px) {
+  .checkbox__icon {
+    margin-left: 12px;
+  }
+}
+
 .checkbox__text {
   display: block;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.22;
   letter-spacing: 0.03em;
   color: var(--main-text-grey);
+}
+
+@media (min-width: 1200px) {
+  .checkbox__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__input {
@@ -1917,12 +1920,13 @@ img {
   overflow: auto;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: var(--primary-white);
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms var(--timing-function);
@@ -2022,6 +2026,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
 }
 
 .mobile-social__link {

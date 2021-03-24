@@ -8,22 +8,30 @@
 .checkbox__icon {
   border: 2px solid var(--hdr-text-black);
   background: var(--primary-white);
-  margin-left: 12px;
   margin-right: 8px;
   border-radius: 2px;
   display: inline-block;
   align-items: center;
   cursor: pointer;
+
+  @media (min-width: $desktop) {
+    margin-left: 12px;
+  }
 }
 
 .checkbox__text {
   display: block;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.22;
   letter-spacing: 0.03em;
   color: var(--main-text-grey);
+
+  @media (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__input {
