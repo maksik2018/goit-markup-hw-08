@@ -1820,7 +1820,7 @@ img {
   margin-left: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .examples__item {
     display: -webkit-box;
     display: -ms-flexbox;

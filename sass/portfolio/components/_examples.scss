@@ -10,7 +10,7 @@
   margin-top: 30px;
   margin-left: 30px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-basis: calc(100% / 2 - 30px);
   }
