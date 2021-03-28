@@ -6,12 +6,15 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  padding: 5px 6px;
+
   background-color: var(--primary-white);
-  fill: currentColor;
+  // fill: currentColor;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  outline: none;
+  // outline: none;
   transition: fill 250ms var(--timing-function);
 
   &:hover,
@@ -19,3 +22,10 @@
     fill: var(--primary-blue);
   }
 }
+
+// .close {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   fill: black;
+// }
